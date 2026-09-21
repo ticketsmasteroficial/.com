@@ -145,7 +145,7 @@ margin-bottom:25px;
       <option value="113">113</option>
       <option value="114">114</option>
       <option value="Platea C Sector 14">Platea C Sector 14</option>
-      <option value="Palco Oro">Palco Oro</option>
+      <option value="Platea Central">Platea Central</option>
     </select>
   </div>
 
@@ -162,7 +162,7 @@ margin-bottom:25px;
     <svg id="mapa113" viewBox="0 0 1000 700" style="display:none"><g id="asientos113"></g></svg>
     <svg id="mapa114" viewBox="0 0 1000 600" style="display:none"><g id="asientos114"></g></svg>
     <svg id="mapaPlatea C Sector 14" viewBox="0 0 1000 650" style="display:none"><g id="asientosPlatea C Sector 14"></g></svg>
-    <svg id="mapaPalco Oro" viewBox="0 0 1000 750" style="display:none"><g id="asientosPalco Oro"></g></svg>
+    <svg id="mapaPlatea Central" viewBox="0 0 1000 750" style="display:none"><g id="asientosPlatea Central"></g></svg>
   </div>
 
   <div class="card" id="confirm" style="display:none">
@@ -302,21 +302,21 @@ const mapas = {
   '113': { svg: document.getElementById('mapa113'), grupo: document.getElementById('asientos113'), filas: 26, y: 40 },
   '114': { svg: document.getElementById('mapa114'), grupo: document.getElementById('asientos114'), filas: 8, y: 90 },
   'Platea C Sector 14': { svg: document.getElementById('mapaPlatea C Sector 14'), grupo: document.getElementById('asientosPlatea C Sector 14'), filas: 11, y: 60 },
-  'Palco Oro': { svg: document.getElementById('mapaPalco Oro'), grupo: document.getElementById('asientosPalco Oro'), filas: 26, y: 40 }
+  'Platea Central': { svg: document.getElementById('mapaPlatea Central'), grupo: document.getElementById('asientosPlatea Central'), filas: 26, y: 40 }
 };
 const ocupacionLocalidad = {
 
-    "103": 0.70,
+    "103": 0.65,
 
-    "106": 0.65,
+    "106": 0.66,
 
-    "113": 0.75,
+    "113": 0.70,
 
-    "114": 0.70,
+    "114": 0.68,
 
-    "Platea C Sector 14": 0.80,
+    "Platea C Sector 14": 0.85,
 
-    "Palco Oro": 0.85
+    "Platea Central": 0.85
 
 };
 function habilitarLocalidad() {
@@ -476,7 +476,7 @@ const precios = {
   '113': 249000,
   '114': 249000,
   'Platea C Sector 14': 720000,
-  'Palco Oro': 920000
+  'Platea Central': 720000
 };
 
 const servicio = 60000;
